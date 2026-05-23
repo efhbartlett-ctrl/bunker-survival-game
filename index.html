@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bunker Survival</title>
+    <style>
+        body { margin: 0; overflow: hidden; font-family: Arial; }
+        canvas { display: block; }
+        #ui {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-size: 16px;
+            background: rgba(0,0,0,0.7);
+            padding: 15px;
+            width: 300px;
+            border: 2px solid yellow;
+        }
+        .resource { color: #00ff00; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    <div id="ui">
+        <h2>BUNKER SYSTEMS</h2>
+        <div class="resource">Power: <span id="power">100</span>%</div>
+        <div class="resource">Water: <span id="water">100</span>%</div>
+        <div class="resource">Food: <span id="food">100</span>%</div>
+        <div class="resource">Morale: <span id="morale">100</span>%</div>
+        <h3>Active Quests</h3>
+        <div id="quests"></div>
+        <p style="font-size: 12px; margin-top: 10px;">
+            WASD - Move | Mouse - Look | Space - Jump | Q - Complete Quest | P - Pause
+        </p>
+    </div>
+
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
